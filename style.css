@@ -30,19 +30,48 @@
 
 }
 
-.para {
+#para {
    padding: 6px;
    
 }
 
 .btn-back {
-    flex-direction: row;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     bottom: 25px;
     padding: 10px;
 
 
+}
+.modal {
+    background-color: var(--modal-bg-color);
+    width: 20% ;
+    border-radius: 50px;
+ /* Gere la disposition des "enfents-flex" perpendiculairement au "fil"*/
+    align-items: center;
+    /*Activer le systeme de flexbox sur <header> qui devient "parent-flex"*/
+    display: flex;
+    /*Gere l'orientation du fil */
+    flex-direction: column;
+    /*Gére la goutière (espace de séparation) entre les "enfants-flex"*/
+    gap: 5px;
+    padding: 20px;
+
+}
+
+.modal-overlay {
+    /*Positionne le bloc de la meme maniere qu'absolute, mais sa réference est la fenetre d'affichage*/
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    /*vh= viewport height = 100% de la hauteur du viewport */
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
 }
 
 .story {
