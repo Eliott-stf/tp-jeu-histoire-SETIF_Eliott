@@ -13,4 +13,62 @@
     src: url("./assets/fonts/KOMTXTI_.ttf") format("truetype");
 }
 
+
 /* ---------- VOTRE CSS ICI ---------- */
+:root {
+    --img-height: 512px;
+    --img-width: 896px;
+    --img-scale: .5;
+}
+
+
+.btn {
+    /*Modifier la couleur du background*/
+    background-color: #ff4081;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.para {
+   padding: 6px;
+   
+}
+
+.btn-back {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 25px;
+    padding: 10px;
+
+
+}
+
+.story {
+    background-color: #ffe4e1;
+    border: 2px #ff4081 solid;
+    border-radius: 10px;
+}
+
+
+.story-img {
+    
+    width: calc(var(--img-width)*var(--img-scale));
+    height: calc(var(--img-height)* var(--img-scale));
+    background-size: calc(var(--img-width) * var(--img-scale)) calc(var(--img-height)* var(--img-scale));
+   
+}
+
+
+#back {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    border: 2px red solid;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
