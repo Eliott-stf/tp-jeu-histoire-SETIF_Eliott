@@ -1,0 +1,16 @@
+/* ----- Déclaration des polices ----- */
+/* Sonic (sonic_comic.ttf) */
+@font-face {
+    /* Désigne le nom sous lequel la police va être utilisée */
+    font-family: 'sonic';
+    /* Chemin vers le fichier de la police et son type */
+    src: url("./assets/fonts/sonic_comic.ttf") format("truetype");
+}
+
+/* Comic (KOMTXTI_.ttf) */
+@font-face {
+    font-family: 'comic';
+    src: url("./assets/fonts/KOMTXTI_.ttf") format("truetype");
+}
+
+/* ---------- VOTRE CSS ICI ---------- */
