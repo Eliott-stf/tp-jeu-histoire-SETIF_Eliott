@@ -30,22 +30,27 @@
 
 }
 
+.hidden {
+  display: none;
+}
+
+
 #para {
    padding: 6px;
    
 }
 
 .btn-back {
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: row;
+     display: flex;
+  gap: 10px; 
     bottom: 25px;
     padding: 10px;
 
 
 }
 .modal {
-    background-color: var(--modal-bg-color);
+   
     width: 20% ;
     border-radius: 50px;
  /* Gere la disposition des "enfents-flex" perpendiculairement au "fil"*/
@@ -71,7 +76,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .story {
@@ -95,9 +100,11 @@
     border-radius: 10px;
     border: 2px red solid;
     padding: 20px;
-    display: flex;
     flex-wrap: wrap;
     margin-right: 100px;
     margin-left: 100px;
     margin-bottom: 20px;
+     display: flex;
+  justify-content: center;
+  align-items: center;
 }
