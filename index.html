@@ -1,74 +1,33 @@
-<!-- ---------- VOTRE HTML ICI ---------- -->
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>Histoire</title>
 </head>
-
 <body>
-    <div id="back">
-
-        <div id="text" class="story">
-            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla aut veniam nihil!
-                Aspernatur
-                distinctio aliquid voluptatem a dicta dolorem quas error, repellat doloribus placeat delectus architecto
-                veritatis est porro.</p>
+   <div class="back-story"> 
+        <div class="story">
+            <p id="para"></p>
         </div>
 
-        <div class="story-img" style="background-image:url('./assets/images/prompt_1.webp')"></div>
+        <div class="img" style="background-image:url('./assets/images/prompt_1.webp')"></div>
 
-        <div id="btn-container" class="btn-back">
-            <!--<button type="button" id="btn-choice-one" class="btn">blablablablablablblablablabab</button>
-            <button type="button" id="btn-choice-two" class="btn">blablablablablabl</button> -->
+        <div id="back-btn" class="btn-back">
+            <!--<button type="button" id="btn-choice-one" class="btn">Travailler toute la nuit, en faisant des cernes ta nouvelle décoration faciale.</button>
+            <button type="button" id="btn-choice-two" class="btn">Commencer à parler de la théorie postmoderne, histoire de donner un peu plus de substance.</button> -->
         </div>
-        <div id="modal-win" class="modal-overlay hidden">
-            <div class="modal">
-                <div id="finText">Victoire</div>
-                <button type="button" id="btn-play-again" class="btn">Rejouer</button>
-            </div>
-        </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div id ="modal-win" class="modal-overlay hidden ">
+        <div class="modal">
+            <p id="fin-text"></p>
+            <button type="button" id="btn-play-again" class="btn">Recommencer</button>
+        </div>
+    </div> 
 
     <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
