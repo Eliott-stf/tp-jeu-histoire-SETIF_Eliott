@@ -1,14 +1,27 @@
 console.log('Ça marche 🚀');
+
 const container = document.getElementById("btn-container");
 const elFinText = document.getElementById("finText");
+const elModal = document.getElementById("modal-win");
+const elBtnPlayAgain = document.getElementById('btn-play-again');
+
 
 // ---------- VOTRE JS ICI ----------
 let para = document.getElementById('para');
 let monId = 1;
 
+//Ecouteur sur elBtnPlayAgain
+elBtnPlayAgain.addEventListener('click', function() {
+    //on cache la modale
+    elModal.classList.add('hidden');
+    monId = 1;
+    getBtnDOM();
+})
 
 //Fonction pour creer les boutons dynamiquement
 function getBtnDOM() {
+
+    
 
     //on vide le container 
     container.innerHTML = "";
@@ -43,35 +56,13 @@ function getBtnDOM() {
             console.log(monId);
 
             if (monId === 0){
-                const fin = tableauFins.find(_ => _.id === answers.moralId);
+                const fin = tableauFins.find(_ => _.id === answer.moralId);
+                elModal.classList.remove('hidden');
                 elFinText.textContent = fin.text;
             }
-            handlerBtnClick();
+            getBtnDOM();
         })
     })
 }
 
-//Focntion pour la gestion apres le click
-function checkEnding() {
-    //TODO: Si le id == 0 
-    //add la classe hidden a la modale
-    //clear le innerHTML
-    //link le nouveau id
-    getBtnDOM();
-}
-
-
-//TODO: Fonction pour initialiser 
-function initStory() {
-
-
-    getBtnDOM();
-    
-
-}
-
-
-
-
-
-initStory()
+getBtnDOM();
